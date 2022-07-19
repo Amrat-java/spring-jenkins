@@ -1,19 +1,17 @@
 package com.jenkins.springjenkins;
 
-import org.junit.runner.RunWith;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.PostConstruct;
-import java.util.logging.Logger;
 
 @SpringBootApplication
 public class SpringJenkinsApplication {
 
 
-	public static Logger logger = (Logger) LoggerFactory.getLogger(SpringJenkinsApplication.class);
+	public static Logger logger = LoggerFactory.getLogger(SpringJenkinsApplication.class);
 
 	@PostConstruct
 	public void init(){
