@@ -20,6 +20,7 @@ public class SpringJenkinsApplication {
 	public static void main(String[] args) {
 		logger.info("Application executed.....");
 		logger.info("Application executed 2nd time.....");
+		logger.info("Application executed 3rd time Again.....");
 
 
 		SpringApplication.run(SpringJenkinsApplication.class, args);
